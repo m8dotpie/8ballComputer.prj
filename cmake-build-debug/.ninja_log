@@ -1,0 +1,17 @@
+# ninja log v5
+2365	2811	1672756595432827472	/Users/m8dotpie/Projects/PascalWings/PascalWings	364f15592a2f810e
+0	13	0	clean	7896b6628c639199
+2	379	1674053877280689085	CMakeFiles/8ball.dir/src/glad/glad.c.o	dfb18213859dcee5
+380	2030	1674053878885759747	CMakeFiles/8ball.dir/src/imgui/imgui_draw.cpp.o	7c901332507d624
+6	2505	1674053879392839743	CMakeFiles/8ball.dir/src/imgui/imgui.cpp.o	a4878846419e0ae7
+1	2654	1674053879545393746	CMakeFiles/8ball.dir/src/main.cpp.o	b4861b5fffd5465a
+2031	3199	1674053880095067286	CMakeFiles/8ball.dir/src/imgui/imgui_tables.cpp.o	209e0eaa5645a2b0
+3199	3390	1674053880293503966	CMakeFiles/8ball.dir/src/imgui/imgui_impl_glfw.cpp.o	376180ca4f0b6c32
+2657	3476	1674053880375113559	CMakeFiles/8ball.dir/src/imgui/imgui_demo.cpp.o	98228b18c1e2ce6b
+3390	3597	1674053880500024695	CMakeFiles/8ball.dir/src/imgui/imgui_impl_opengl3.cpp.o	c74b79a220506c09
+2506	4443	1674053881339185343	CMakeFiles/8ball.dir/src/imgui/imgui_widgets.cpp.o	1983a52dcd04ae9b
+3477	5135	1674053882032504404	CMakeFiles/8ball.dir/src/implot/implot.cpp.o	41cc3896c238b46
+4443	5443	1674053882341544926	CMakeFiles/8ball.dir/src/implot/implot_demo.cpp.o	73add7e103fffa5d
+5135	6409	1674053883310908312	CMakeFiles/8ball.dir/src/ShaderProgram.cpp.o	558dcb8278c01908
+3597	22105	1674053898899573997	CMakeFiles/8ball.dir/src/implot/implot_items.cpp.o	197523711a11c89a
+22141	22711	1674053899583611354	/Users/m8dotpie/Projects/8ballComputer.prj/8ball	50e5184cc2ad4d16

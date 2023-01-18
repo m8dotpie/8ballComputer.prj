@@ -1,0 +1,240 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: 8ball
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/m8dotpie/Projects/8ballComputer.prj/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target 8ball
+
+
+#############################################
+# Order-only phony target for 8ball
+
+build cmake_object_order_depends_target_8ball: phony || CMakeFiles/8ball.dir
+
+build CMakeFiles/8ball.dir/src/main.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/main.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src
+
+build CMakeFiles/8ball.dir/src/glad/glad.c.o: C_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/glad/glad.c || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/glad/glad.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/glad
+
+build CMakeFiles/8ball.dir/src/imgui/imgui.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/imgui/imgui_draw.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui_draw.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui_draw.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/imgui/imgui_tables.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui_tables.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui_tables.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/imgui/imgui_widgets.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui_widgets.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/imgui/imgui_demo.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui_demo.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui_demo.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/imgui/imgui_impl_glfw.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui_impl_glfw.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui_impl_glfw.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/imgui/imgui_impl_opengl3.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/imgui/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/imgui/imgui_impl_opengl3.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/imgui
+
+build CMakeFiles/8ball.dir/src/implot/implot.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/implot/implot.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/implot/implot.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/implot
+
+build CMakeFiles/8ball.dir/src/implot/implot_items.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/implot/implot_items.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/implot/implot_items.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/implot
+
+build CMakeFiles/8ball.dir/src/implot/implot_demo.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/implot/implot_demo.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/implot/implot_demo.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src/implot
+
+build CMakeFiles/8ball.dir/src/ShaderProgram.cpp.o: CXX_COMPILER__8ball_Debug /Users/m8dotpie/Projects/8ballComputer.prj/src/ShaderProgram.cpp || cmake_object_order_depends_target_8ball
+  DEFINES = -DVERBOSE
+  DEP_FILE = CMakeFiles/8ball.dir/src/ShaderProgram.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/m8dotpie/Projects/8ballComputer.prj/shaders -I/Users/m8dotpie/Projects/8ballComputer.prj/include -I/Users/m8dotpie/Projects/8ballComputer.prj/include/imgui -I/Users/m8dotpie/Projects/8ballComputer.prj/include/implot -I/Users/m8dotpie/Projects/8ballComputer.prj/include/glm -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  OBJECT_FILE_DIR = CMakeFiles/8ball.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 8ball
+
+
+#############################################
+# Link the executable /Users/m8dotpie/Projects/8ballComputer.prj/8ball
+
+build /Users/m8dotpie/Projects/8ballComputer.prj/8ball: CXX_EXECUTABLE_LINKER__8ball_Debug CMakeFiles/8ball.dir/src/main.cpp.o CMakeFiles/8ball.dir/src/glad/glad.c.o CMakeFiles/8ball.dir/src/imgui/imgui.cpp.o CMakeFiles/8ball.dir/src/imgui/imgui_draw.cpp.o CMakeFiles/8ball.dir/src/imgui/imgui_tables.cpp.o CMakeFiles/8ball.dir/src/imgui/imgui_widgets.cpp.o CMakeFiles/8ball.dir/src/imgui/imgui_demo.cpp.o CMakeFiles/8ball.dir/src/imgui/imgui_impl_glfw.cpp.o CMakeFiles/8ball.dir/src/imgui/imgui_impl_opengl3.cpp.o CMakeFiles/8ball.dir/src/implot/implot.cpp.o CMakeFiles/8ball.dir/src/implot/implot_items.cpp.o CMakeFiles/8ball.dir/src/implot/implot_demo.cpp.o CMakeFiles/8ball.dir/src/ShaderProgram.cpp.o | /usr/local/lib/libglfw.3.3.dylib
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libglfw.3.3.dylib  -framework Cocoa  -framework IOKit  -framework CoreVideo
+  OBJECT_DIR = CMakeFiles/8ball.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = /Users/m8dotpie/Projects/8ballComputer.prj/8ball
+  TARGET_PDB = 8ball.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/m8dotpie/Projects/8ballComputer.prj/cmake-build-debug && "/Users/m8dotpie/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/m8dotpie/Projects/8ballComputer.prj/cmake-build-debug && "/Users/m8dotpie/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/m8dotpie/Projects/8ballComputer.prj -B/Users/m8dotpie/Projects/8ballComputer.prj/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build 8ball: phony /Users/m8dotpie/Projects/8ballComputer.prj/8ball
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/m8dotpie/Projects/8ballComputer.prj/cmake-build-debug
+
+build all: phony /Users/m8dotpie/Projects/8ballComputer.prj/8ball
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/m8dotpie/Projects/8ballComputer.prj/CMakeLists.txt /usr/local/lib/cmake/glfw3/glfw3Config.cmake /usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake /usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake /usr/local/lib/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/m8dotpie/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/m8dotpie/Projects/8ballComputer.prj/CMakeLists.txt /usr/local/lib/cmake/glfw3/glfw3Config.cmake /usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake /usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake /usr/local/lib/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

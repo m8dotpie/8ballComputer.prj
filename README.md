@@ -1,2 +1,1 @@
-# 8ballComputer
-Billiard Computer Simulator
+# Billiard Computer Simulator
